@@ -11,7 +11,7 @@
     <div class="login-box">
       <img src="images/logo_actual.png" class="avatar" alt="Avatar Image">
       <h1>INGRESAR</h1>
-      <form>
+      <form action = "login.php" enctype = "multipart/form-data" method = "GET">
         <!-- USERNAME INPUT -->
         <label for="username">Usuario</label>
         <input type="text" placeholder="Escribe tu usuario">
