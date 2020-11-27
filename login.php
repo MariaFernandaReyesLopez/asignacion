@@ -21,7 +21,7 @@
 			if($valid > 0){
 				echo "Has entrado"; // agregar la siguiente pantalla
 			}else{
-				echo "<script>alert('Tu suaurio no esta Registrado!')</script>";
+				echo "<script>alert('Tu usuario no esta registrado!')</script>";
 				echo "<script>window.location = 'index.php'</script>";
 			}
 

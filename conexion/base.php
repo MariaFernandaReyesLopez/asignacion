@@ -1,13 +1,16 @@
 <?php
-echo "entra";
-$serverName = "LAPTOP-SH2I8EFC"; //serverName
-echo "pasa server";
-$connectionInfo = array( "Database"=>"horarios", "UID"=>"Fernanda", "PWD"=>"fernanda1823");
-echo "pasa conexion";
-$conn = sqlsrv_connect( $serverName, $connectionInfo);
-echo "pasa a final";
 
-if( $conn ) {
+// Se define la cadena de conexión
+$dsn = "Driver={SQL Server}; Server=LAPTOP-SH2I8EFC; Database=horarios; Integrated Security=SSPI;Persist Security Info=False;";
+
+$connsaiiut = odbc_connect( $dsn, '', '');
+
+/*
+$conn=odbc_connect('northwind','','');
+$sql="SELECT * FROM personas";
+$rs=odbc_exec($conn,$sql);
+*/
+if( $connsaiiut ) {
      echo "Conexión establecida.<br />";
 }else{
      echo "Conexión no se pudo establecer.<br />";
